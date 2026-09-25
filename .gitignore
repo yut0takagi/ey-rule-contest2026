@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+
+# 確認用に書き出した画像
+*.png
+*.jpg

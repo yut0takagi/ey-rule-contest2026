@@ -1,0 +1,17 @@
+{
+  "name": "ey-rule-contest2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "第4回 学生ルール形成アイデアコンテスト 応募資料「沈黙する選考から、育てる選考へ」",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "npm run build:pdf && npm run build:pptx",
+    "build:pdf": "marp slides/slides.md --html --pdf --allow-local-files -o dist/slides.pdf",
+    "build:pptx": "node scripts/build-pptx.js",
+    "preview": "marp slides/slides.md --html --preview"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.4.0",
+    "pptxgenjs": "^4.0.1"
+  }
+}
